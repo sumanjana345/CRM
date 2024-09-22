@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E2E2"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRM"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#545BE9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:id="@+id/etBusinessId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BusinessId"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_below="@id/tvTitle"
+        android:textColor="#000000"
+        android:textColorHint="#353434"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/bisness_id"
+        android:drawablePadding="10dp"
+        android:contentDescription="Enter Business ID" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etBusinessId"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:contentDescription="Enter Email Address" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etEmail"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:background="@drawable/border"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:contentDescription="Enter Password" />
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:contentDescription="Remember Me Checkbox" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#353BAD"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/cbRememberMe"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:contentDescription="Login Button" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+    </style>
+
+    <!-- Custom TextInputLayout style -->
+    <style name="CustomTextInputLayout"  >
+        <!-- Apply custom hint text appearance -->
+       <item name="hintTextAppearance">@style/CustomHintTextAppearance</item>
+    </style>
+
+    <!-- Custom Hint Text Appearance -->
+    <style name="CustomHintTextAppearance">
+        <item name="android:textSize">15sp</item> <!-- Adjust size if needed -->
+        <item name="android:translationY">-10dp</item> <!-- Move hint text further up -->
+        <item name="android:translationX">-6dp</item> <!-- Optional horizontal adjustment -->
+        <item name="android:translationZ">0dp</item> <!-- Adjust if elevation effects are needed -->
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+</resources>
